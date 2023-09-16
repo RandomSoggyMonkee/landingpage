@@ -10,14 +10,25 @@ body {
     margin: 0;
 }
 
-nav, .hero, footer {
+/* NEED TO FIX FOOTER WHEN I GET TO THAT PART!!! */
+nav, 
+.hero,
+.info,
+footer {
+    padding: 0 100px;
+}
+
+/* HEADER */
+
+nav, 
+.hero, 
+footer {
     background-color: #1f2937;
 }
 
 nav {
     display: flex;
     align-items: center;
-    padding: 0 100px;
 }
 
 .headlogo {
@@ -28,16 +39,23 @@ nav {
 ul {
     display: flex;
     list-style-type: none;
-    color: #c7c7c7;
-    margin: 0 0 0 auto;
+    margin-left: auto;
     gap: 10px;
 }
+
+ul,
+.herotext {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+/* HERO SECTON */
 
 .hero {
     display: flex;
     flex: 1;
-    gap: 20px;
-    padding: 50px 100px;
+    gap: 25px;
+    padding: 100px 200px;
 }
 
 .herotitle {
@@ -47,12 +65,10 @@ ul {
     margin: 0;
 }
 
-.herotext {
-    color: #c7c7c7;
-}
-
 button {
     background-color: #3882f6;
+    color: #f9faf8;
+    font-weight: 700;
     padding: 5px 20px;
     border-radius: 5px;
     border: none;
@@ -62,7 +78,48 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #5e5e5e;
-    color: #c7c7c7;
+    background-color: #747474;
+    color: #e2e2e2;
     min-width: 400px;
 }
+
+/* INFO SECTON */
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infotitle {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+}
+
+.infocards {
+    display: flex;
+    gap: 40px;
+
+}
+
+.cardbox {
+    height: 150px;
+    width: 150px;
+    border: 3px solid #3882f6;
+    border-radius: 15px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 150px;
+}
+
+.cardtext {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 16.5px;
+}
+
