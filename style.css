@@ -2,29 +2,38 @@ html {
     box-sizing: border-box;
 }
 
-/* * {
-    border: 1px solid red;
-} */
-
 body {
     margin: 0;
 }
 
-/* NEED TO FIX FOOTER WHEN I GET TO THAT PART!!! */
-nav, 
+nav,
 .hero,
-.info,
-footer {
-    padding: 0 100px;
+.info
+.quote {
+    max-width:  825px;
+    margin: auto;
 }
 
-/* HEADER */
-
-nav, 
-.hero, 
+header,
+.herosection, 
 footer {
     background-color: #1f2937;
 }
+
+.infotitle,
+.cardtext,
+.quotetext {
+    color: #1f2937;
+}
+
+ul,
+.herotext {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+
+/* HEADER */
 
 nav {
     display: flex;
@@ -43,11 +52,7 @@ ul {
     gap: 10px;
 }
 
-ul,
-.herotext {
-    font-size: 18px;
-    color: #e5e7eb;
-}
+
 
 /* HERO SECTON */
 
@@ -55,7 +60,7 @@ ul,
     display: flex;
     flex: 1;
     gap: 25px;
-    padding: 100px 200px;
+    padding: 100px 0;
 }
 
 .herotitle {
@@ -83,22 +88,25 @@ button {
     min-width: 400px;
 }
 
+
 /* INFO SECTON */
 
 .info {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 0 100px 0;
+    margin: 0 auto;
 }
 
 .infotitle {
     font-size: 36px;
-    color: #1f2937;
     font-weight: 900;
 }
 
 .infocards {
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
 
 }
@@ -123,3 +131,20 @@ button {
     font-size: 16.5px;
 }
 
+
+/* QUOTE SECTION */
+
+.quote {
+    background-color: #e5e7eb;
+    padding: 100px 300px;
+}
+
+.quotetext {
+    margin: 0;
+    font-size: 36px;
+    font-style: italic;
+}
+
+.quotename {
+    font-weight: 900;
+}
