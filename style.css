@@ -41,9 +41,19 @@ ul,
 }
 
 .herotitle,
-.ctahead {
+.ctahead,
+.foot {
     color: #f9faf8;
 }
+
+.imgholder,
+.ctacontainer,
+.ctacard,
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}    
 
 
 /* HEADER */
@@ -92,9 +102,6 @@ button {
 }
 
 .imgholder {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #747474;
     color: #e2e2e2;
     min-width: 400px;
@@ -170,14 +177,6 @@ button {
 
 /* CTA SECTION */
 
-
-.ctacontainer,
-.ctacard {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .ctacard {
     background-color: #3882f6;
     margin: 75px auto;
@@ -200,6 +199,10 @@ button {
 
 
 /* FOOTER SECTION */
+
+footer {
+    padding: 15px;
+}
 
 
 
