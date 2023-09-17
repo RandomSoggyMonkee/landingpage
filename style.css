@@ -34,7 +34,7 @@ footer {
     color: #1f2937;
 }
 
-ul,
+a,
 .herotext {
     font-size: 18px;
     color: #e5e7eb;
@@ -73,6 +73,10 @@ ul {
     list-style-type: none;
     margin-left: auto;
     gap: 10px;
+}
+
+a {
+    text-decoration: none;
 }
 
 
